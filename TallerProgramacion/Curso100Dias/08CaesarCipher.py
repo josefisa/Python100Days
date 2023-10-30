@@ -36,10 +36,11 @@ def solution(text_sample, shift_ammount, direction):
 control = True
 while control: 
     executable = direction()
+    clear()
     
     if executable == 'esc':
-        print('Thanks for using this program! \n')
-        control = False ; break
+        print('Thanks for using this program, Goodbye! \n')
+        control = False; break
     
     if executable == 'encode' or  executable == 'decode':
         text, shift = ask_data()
